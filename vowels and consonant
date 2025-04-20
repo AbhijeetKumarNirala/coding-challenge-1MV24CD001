@@ -1,0 +1,19 @@
+def count_vowels_consonants(s):
+    vowels = "aeiou"
+    vowel_count = 0
+    consonant_count = 0
+
+    s = s.lower()
+
+    for char in s:
+        if char.isalpha(): 
+            if char in vowels:
+                vowel_count += 1
+            else:
+                consonant_count += 1
+
+    print("Vowels:", vowel_count)
+    print("Consonants:", consonant_count)
+
+input_str = input("Enter a string: ")
+count_vowels_consonants(input_str)
